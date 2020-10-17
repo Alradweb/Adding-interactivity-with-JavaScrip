@@ -1,12 +1,13 @@
 {
   "name": "web-dev",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "author": "Alex",
   "license": "MIT",
   "scripts": {
     "dev": "webpack-dev-server --config webpack/webpack.dev.config.js",
-    "build": "webpack --config webpack/webpack.prod.config.js"
+    "build": "webpack --config webpack/webpack.prod.config.js",
+    "send": "yarn build && surge dist/"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
