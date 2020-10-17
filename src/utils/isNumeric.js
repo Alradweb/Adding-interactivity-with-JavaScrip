@@ -1,0 +1,1 @@
+export default num => !isNaN(parseFloat(num)) && isFinite(num)
